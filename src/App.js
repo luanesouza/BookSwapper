@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import './App.css';
 import MyWishlist from './components/MyWishlist';
+import Header from './components/Header/Header';
+import Login from './components/Login/Login';
+import {withRouter} from 'react-router-dom';
 
 class App extends Component {
 
@@ -8,10 +11,10 @@ class App extends Component {
 
     return (
       <main className="App">
-        <MyWishlist />
+        <Login />
       </main>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
